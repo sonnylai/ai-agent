@@ -1,0 +1,6 @@
+{
+  "id": "schema_orders",
+  "type": "schema",
+  "title": "orders table",
+  "text": "Table: orders\nDescription: Stores customer purchase transactions.\nColumns:\n- id (int, primary key)\n- customer_id (int, foreign key -> customers.id)\n- total_amount (numeric) — total monetary value of the order.\n- status (text) — order status; possible values: pending, paid, cancelled\n- created_at (timestamp) — the order creation date (use this as the order date)\nRelationships: orders.customer_id -> customers.id\nNotes: Use created_at to filter orders by date ranges."
+}
