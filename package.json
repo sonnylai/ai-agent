@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "init-db": "node scripts/init-db.js",
     "ingest": "node ingest.js",
-    "dev": "node agent.js"
+    "dev": "node agent.js",
+    "server": "node customer-server.js",
+    "mcp-server": "node mcp/rest-server"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.24.3",
+    "axios": "^1.13.2",
     "dotenv": "^16.0.3",
     "openai": "^4.16.0",
-    "pg": "^8.11.0"
+    "pg": "^8.11.0",
+    "zod": "^3.25.76"
   },
   "engines": {
     "node": ">=18"
