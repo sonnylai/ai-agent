@@ -1,0 +1,6 @@
+{
+  "id": "schema_customers",
+  "type": "schema",
+  "title": "customers table",
+  "text": "Table: customers\nDescription: Contains customer profile information.\nColumns:\n- id (int, primary key)\n- full_name (text)\n- email (text)\n- created_at (timestamp) — when the customer account was created.\nRelationships: customers.id -> orders.customer_id"
+}
